@@ -1,0 +1,48 @@
+<html>
+<head>
+
+<link rel="StyleSheet" type="text/css" href="first.css">
+</head>
+<body>
+<% set mct=server.createobject("MSWC.pagecounter")
+mct.pagehit( )
+n=mct.hits( )
+frm.t5.value=n
+%>
+<center><table width="950" border="0" align="center">
+<tr> 
+<td width="250" bgcolor="#340"><img src=pics\I1.jpg height=50 width=90>&nbsp;&nbsp;&nbsp;&nbsp;<SPAN STYLE="FONT-FAMILY:COMIC SANS MS ; COLOR:WHITE;VERTICAL-ALIGN:SUPER;FONT-SIZE:30">REGISTER HERE</SPAN></td>
+</tr>
+</table>
+ <table width="950" border="0" align="center">
+    <tr>
+      <td height="40";align="center" valign="middle" ><a href="homepage.html" class="login">Home</a></td>
+      <td  align="center" valign="middle" ><a href="#" class="login">About us</a></td>
+       <td  align="center" valign="middle" ><a href="signin.html" class="login">Login</a></td>
+      <td align="center" valign="middle"  ><a href="addrec1.asp" class="login">Register</a></td>
+       <td  align="center" valign="middle"><a href="#" class="login">Contact Us</a></td>
+    </tr>
+   </table><br><br><br><br><br><br><br><br>
+<CENTER><h3>REGISTRATION FORM</H3>
+<form name=frm method=post action="accs/add.asp">
+<FONT CLASS=LOGIN>
+User ID <input type=text name=t5 ><br>
+ Enter your name
+<input type=text name=t1></DIV>
+<bR>
+Select your age group
+<select >
+<option>13-17</option>
+<option>18-40</option>
+ <option>40 and above</option>
+</select><br>Choose a password for you
+<input type=password name= t2>
+<br>
+Enter your E-Mail ID
+<input type=text name=t3><br>
+<input type=submit>
+</form>
+</CENTER>
+
+</body>
+</html>
